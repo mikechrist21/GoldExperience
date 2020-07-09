@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfileActivity" >
+
+    <RelativeLayout
+        android:id="@+id/profile_container_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="30sp"
+        tools:context=".activity.RegisterActivity" >
+
+        <include
+            layout="@layout/template_profile"
+            android:id="@+id/profile_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp" />
+
+        <LinearLayout
+            android:id="@+id/profile_container_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_profile"
+            android:layout_marginTop="50sp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/profile_btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:layout_gravity="center"
+                android:text="@string/update" />
+
+            <Button
+                android:id="@+id/profile_btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_gravity="center"
+                android:text="@string/logout" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

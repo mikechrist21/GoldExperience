@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomnavigation_myplan"
+        android:title="@string/title_my_plan"
+        android:icon="@drawable/my_plan" />
+
+    <item
+        android:id="@+id/bottomnavigation_profile"
+        android:title="@string/title_profile"
+        android:icon="@drawable/profile" />
+
+</menu>

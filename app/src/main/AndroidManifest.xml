@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.my.avmmartin.goldexperience">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name=".GoldExperience"
+        android:allowBackup="true"
+        android:icon="@drawable/g_symbol"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/g_symbol"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.PlaceListActivity"
+            android:theme="@style/AppTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".activity.PlaceDetailActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.PlanListActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:theme="@style/AppTheme" />
+
+    </application>
+
+</manifest>
